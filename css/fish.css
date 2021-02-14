@@ -1,0 +1,20 @@
+body {
+    background: #35648d url("/img/salmon.png") no-repeat scroll 50% 50%;
+    }
+    body {
+     padding: 160px 160px; 
+    }
+
+    body main div h1 { 
+        text-align: center;
+        color: rgb(238, 132, 32);
+         
+
+    }
+    body main nav a h2 {
+        text-align: center;
+
+    }
+    #mohammad {
+        text-align: center;
+    }
