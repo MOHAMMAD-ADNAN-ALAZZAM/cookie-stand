@@ -218,16 +218,16 @@ parisCookies.render();
     dailySales:0,
 
    randomCust :function () {
-        let range=parisCookies.max-this.min;
-        let randomCount=Math.random() * range+parisCookies.min;
+        let range=limaCookies.max-this.min;
+        let randomCount=Math.random() * range+limaCookies.min;
         return Math.ceil(randomCount);
       },
 
     hourlyDailySales :function () {
         for (let m=0;m<hours.length;m++){
-            let numOfCookies= Math.ceil(parisCookies.randomCust() *parisCookies.avgCookieSale);
-            parisCookies.hourlySales.push(numOfCookies);
-            parisCookies.dailySales += numOfCookies;
+            let numOfCookies= Math.ceil(limaCookies.randomCust() *limaCookies.avgCookieSale);
+            limaCookies.hourlySales.push(numOfCookies);
+            limaCookies.dailySales += numOfCookies;
         }
         },
        
@@ -241,11 +241,11 @@ parisCookies.render();
        container.appendChild(list);
        for (let m=0;m<hours.length;m++){
         let listItem = document.createElement('li');
-        listItem.textContent  =hours[m]+': '+parisCookies.hourlySales[m]+' cookies';
+        listItem.textContent  =hours[m]+': '+limaCookies.hourlySales[m]+' cookies';
         list.appendChild(listItem);
        }
        let listItem = document.createElement('li');
-        listItem.textContent  ='Total: '+parisCookies.dailySales+' cookies';
+        listItem.textContent  ='Total: '+limaCookies.dailySales+' cookies';
         list.appendChild(listItem);
 
 
