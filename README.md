@@ -4,3 +4,5 @@
 # The minimum number of customers per hour.
 # The maximum number of customers per hour.
 # The average number of cookies purchased per customer.
+# add table in js .
+# add color and style in css for page and the table .
