@@ -18,5 +18,78 @@ body {
     #mohammad {
         text-align: center;
     }
-    
-    
+    .m1 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 300px;
+        right: 0px; 
+        left: 650px; 
+
+    }
+    .m2 {
+        width: 70px;
+        height: 50px;
+        position: relative;
+        top: 300px;
+    }
+    .m3 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        bottom: 60px;
+    }
+    .m4 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 300px;
+    }
+    .m5 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        bottom: 60px;
+    }
+    .m6 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 300px;
+    }
+    .m7 {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .non {
+        text-decoration: none;
+        color: rgb(49, 2, 2);
+    }
+    .non1 {
+        text-decoration: none;
+        color: rgb(49, 2, 2);
+
+    }
+
+    #mohammad {
+        color: rgb(49, 2, 2);
+
+
+    }
+    .t1 {
+        padding: -18px;
+        position: relative;
+        top: -160px;
+        right: 140px;
+        
+    }
+    .t1 {
+        border: 5px solid rgba(97, 6, 6, 0.76);
+    }
+    tr th {
+        border:3px solid rgb(57, 80, 151);
+        
+    }
