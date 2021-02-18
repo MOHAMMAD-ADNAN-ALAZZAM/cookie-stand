@@ -215,5 +215,7 @@ let shops = [seattle, Tokyo, Dubai, Paris, Lima ];
 
 renderFooterRow(table);
 
-// var form = document.getElementById(' shops');
-// form.addEventListener('submit', newLocaion);
+
+
+
+
