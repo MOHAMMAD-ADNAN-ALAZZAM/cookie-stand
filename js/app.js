@@ -19,7 +19,7 @@ let hours = [
 
 
   
-
+let shops=[];
   function CookieShop(location, min, max, avgCookieSale) {
     this.location = location;
     this.min = min;
@@ -27,10 +27,9 @@ let hours = [
     this.avgCookieSale = avgCookieSale;
     this.hourlySales = [];
     this.dailySales = 0;
-    // this.newLocaion =[]; 
-    // newLocaion.push(this);
+    shops.push(this);
     
-  }
+  };
   
   CookieShop.prototype.randomCust = function () {
     // i do the math in other order range=(max-min)
@@ -68,15 +67,7 @@ let hours = [
     tr.appendChild(td);
     td.textContent = this.dailySales;
   };
-
-
-
-
-
-
 ////////////////////////// global function for header row///////////////////
-
-
   // global function for header row
   let content = document.getElementById("content-area");
   let table = document.createElement("table");
@@ -96,16 +87,9 @@ let hours = [
     let td1 = document.createElement("td");
     tr.appendChild(td1);
     td1.textContent = "Daily Location Total";
-  }
+  };
   header();
-
-
-
-
 //////////////// global function for footer row/////////////
-
-
-
   // global function for footer row
   function renderFooterRow(table) {
    
@@ -144,78 +128,39 @@ let hours = [
     tr.appendChild(td);
   
     td.textContent = megaTotal;
-  }
-
-
-
-  
-  
-  
-  
-  
+  };
   ////////////////////form function//////////////
   const form =document.getElementById('nSalamon-Cookies-sales');
   form.addEventListener('submit',newshop);
   function newshop (event){
     // to prevent default behavior from the webpages
    event.preventDefault();
-  
    const shopName = event.target.locationName.value;
-
    let minNew = event.target.minNum.value;
-  // minNew = minNew.split(',');
-  
-  
+  minNew = parseInt(minNew);
   let maxNew = event.target.maxNum.value;
-  // maxNew = maxNew.split(',');
-  
-
-  
+  maxNew = parseInt (maxNew);
   let avgNew = event.target.avgNum.value;
-  // avgNew = avgNew.split(',');
-  // console.log(avgNew);
+  avgNew = parseFloat(avgNew);
+  
+  console.log(table.rows.length); 
+  // deleting the total ro..
+  table.deleteRow(table.rows.length - 1);
+  //creating the new location
   let newLocaion = new CookieShop(shopName,minNew,maxNew,avgNew);
   newLocaion.hourlyDailySales();
   newLocaion.render();
-  //  let newLocaion= arr ;
-  // newLocaion = newLocaion.split(',');
-  //  let newLocaion = [];
-  //  newLocaion.push()
-  //  newLocaion = newLocaion.split(',');
+  //render the foter to have tha total in the end of the tabel.
+  renderFooterRow(table);
 }
-
-
-
-
 let seattle = new CookieShop("Seattle", 23, 65, 6.3);
-seattle.hourlyDailySales();
-seattle.render();
-
 let Tokyo = new CookieShop("Tokyo", 3, 24, 1.2);
-Tokyo.hourlyDailySales();
-Tokyo.render();
-
 let Dubai = new CookieShop("Dubai", 11, 38, 3.7);
-Dubai.hourlyDailySales();
-Dubai.render();
-
 let Paris = new CookieShop("Paris", 20, 38, 2.3);
-Paris.hourlyDailySales();
-Paris.render();
-
 let Lima = new CookieShop("Lima", 2, 16, 4.6);
-Lima.hourlyDailySales();
-Lima.render();
-
-// let newLocaion = new CookieShop(shopName,minNew,maxNew,avgNew);
-//   newLocaion.hourlyDailySales();
-//   newLocaion.render();
-
-let shops = [seattle, Tokyo, Dubai, Paris, Lima ];
-
+// for loop to modefay the rendering 
+for(let m =0 ; m < shops.length; m++){
+  shops[m].hourlyDailySales();
+  shops[m].render();
+};
 renderFooterRow(table);
-
-
-
-
-

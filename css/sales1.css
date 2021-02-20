@@ -1,18 +1,84 @@
+* { 
+    box-sizing: border-box;
+} 
+
 body {
     background-color: rgb(223, 110, 29);
     color: rgb(5, 31, 109);
-    text-align: center;
-    position: absolute;
-    top: 50px;
+    /* border: 5px solid rgba(97, 6, 6, 0.76); */
+        position: relative;
+    top: 50px; 
     left: 120px;
     width: 120;
+   
 }
+
 
 table {
     border: 5px solid rgba(97, 6, 6, 0.76);
+    background-color: rgb(253, 253, 253);
    
 }
 th,td{
     border:3px solid rgb(57, 80, 151);
+   
+}
+th {
+    background-color: rgb(240, 0, 0);
     
+}
+td {
+    background-color: rgb(251, 255, 0);
+}
+fieldset { 
+    background-color: rgb(251, 255, 0);
+    border: 5px solid rgba(97, 6, 6, 0.76);
+    text-align: center;
+    position: relative;
+    /* top: 50px; */
+    left: 230px;
+    width: 350px;
+   
+
+} 
+footer {
+   
+}
+#content-area {
+    text-align: center;
+
+
+}
+.home {
+    font-family: 'Akaya Kanadaka', cursive;
+    color: honeydew;
+    background-color: rgb(57, 80, 151);
+    font-size: 25px;
+    border: 5px solid rgba(97, 6, 6, 0.76);
+    text-align: center;
+    position: relative;
+    /* top: 50px; */
+    left: 350px;
+    width: 400px;
+    text-decoration-line: none;
+
+}
+.l1 {
+    position: relative;
+    
+    left: -30px;
+
+}
+.n1 {
+    position: relative;
+    left: -33px;
+}
+.n3 {
+    position: relative;
+    left: -2px;
+}
+#mohammad {
+    position: absolute;
+    left: 300px;
+    padding: 0px;
 }
