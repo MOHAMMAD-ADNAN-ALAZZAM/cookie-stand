@@ -1,14 +1,23 @@
 body {
-    background: #35648d url("https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png") no-repeat scroll 50% 50%;
-    }
+    background: #35648d 
+}
     body {
      padding: 160px 160px; 
     }
 
-    body main div h1 { 
+    .d1 { 
+        font-family: 'Akaya Kanadaka', cursive;
         text-align: center;
-        color: rgb(238, 132, 32);
-         
+        color: rgb(236, 236, 236);
+        font-size: 35px;
+        
+        font-style: italic ;
+        
+        position: absolute;
+        bottom: 0px;
+        top: 100px;
+        right: 0px; 
+        left: 30px; 
 
     }
     body main nav a h2 {
@@ -18,73 +27,125 @@ body {
     #mohammad {
         text-align: center;
     }
-    .m1 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        top: 300px;
+    .m0{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        bottom: 100px;
+        top:0px;
         right: 0px; 
-        left: 650px; 
+        left: 300px
+
+    }
+    .m1 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 700px; 
 
     }
     .m2 {
-        width: 70px;
-        height: 50px;
-        position: relative;
-        top: 300px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 50px; 
     }
     .m3 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        bottom: 60px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 200px;  
     }
     .m4 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        top: 300px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 370px;  
     }
     .m5 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        bottom: 60px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left:540px;   
+
     }
-    .m6 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        top: 300px;
-    }
+   .m6 {
+    width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 1100px;  
+
+       }
     .m7 {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        bottom: 60px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        top: 800px;
+        right: 0px; 
+        left: 900px;  
     }
 
-    .non {
+    .s1 {
+        font-family: 'Akaya Kanadaka', cursive;
         text-decoration: none;
-        color: rgb(49, 2, 2);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        font-size: 35px;
+        bottom: 0px;
+        top: 300px;
+        right: 0px; 
+        left: 620px;
+        width: 40px; 
     }
-    .non1 {
+    .c1 {
+        font-family: 'Akaya Kanadaka', cursive;
         text-decoration: none;
-        color: rgb(49, 2, 2);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        font-size: 25px;
+        bottom: 0px;
+        top: 400px;
+        right: 0px; 
+        left: 420px;
+        width: 500px; 
 
     }
 
     #mohammad {
         color: rgb(49, 2, 2);
-
+        position: absolute;
+        bottom: 0px;
+        top:760px;
+        right: 0px; 
+        left: 60px; 
 
     }
     .t1 {
-        padding: -18px;
-        position: relative;
-        top: -160px;
-        right: 140px;
         
+        position: absolute;
+        bottom: 0px;
+        top: 350px;
+        right: 0px; 
+        left: 0px; 
     }
     .t1 {
         border: 5px solid rgba(97, 6, 6, 0.76);
@@ -93,3 +154,28 @@ body {
         border:3px solid rgb(57, 80, 151);
         
     }
+    .ul {
+        text-align: center;
+    }
+    .p {
+        font-family: 'Akaya Kanadaka', cursive;
+        
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        bottom: 0px;
+        top: 550px;
+        right: 0px; 
+        left: 0px;  
+
+    }
+    table {
+        background-color: yellow;
+    }
+    th {
+        background-color: tomato;
+    }
+    tr {
+        background-color: springgreen;
+    }
+    

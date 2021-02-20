@@ -3,29 +3,32 @@
 <head>
 
     <title>Salamon Cookies</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/sales1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <p><a href="index.html" target="_top">home page</a></p>
+        <p><a class="home" href="index.html" target="_top">home page</a></p>
     </header>
     <form id="nSalamon-Cookies-sales">
         <fieldset>
-            <legend>Salamon Cookies sales</legend>
-            <label for="location">location name:</label>
-            <input type="text" id="locationName">
+            <legend class="form">Salamon Cookies sales</legend>
+            <label class="l1" for="location">location name:</label>
+            <input class="n1" type="text" id="locationName">
             <br>
             <label for="min">    min:</label>
             <input type="number" id="minNum">
             <br>
             <label for="max">    max:</label>
-            <input type="number" id="maxNum">
+            <input class="n3" type="number" id="maxNum">
             <br>
             <label for="avg">    avg:</label>
-            <input type="number" id="avgNum">
+            <input type="number" step="0.1" id="avgNum">
             <br>
             <!-- <button id="submit">submit</button> -->
-            <input type="submit" value="Submit">
+            <input type="submit"  value="Submit">
 
         </fieldset>
     </form>
